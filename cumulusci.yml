@@ -1,0 +1,26 @@
+minimum_cumulusci_version: '2.5.7'
+project:
+    name: cci_test_1
+    package:
+        name:  cci_test_1
+        api_version: '46.0'
+    dependencies:
+        - github: 'https://github.com/SalesforceFoundation/EDA'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/cci_test_1/tests
+            options:
+                outputdir: robot/cci_test_1/results
+
+    robot_testdoc:
+        options:
+            path: robot/cci_test_1/tests
+            output: robot/cci_test_1/doc/cci_test_1_tests.html
+
+flows:
+    config_qa:
+        1.1:
+            task: deploy_qa_config
