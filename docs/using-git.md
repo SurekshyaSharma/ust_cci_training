@@ -1,7 +1,6 @@
 # Git - ***Notes***
 
 Hi Farrah!
-Well hellooooo there!  :) 
 
 Getting a repository from git hub
 
@@ -12,6 +11,8 @@ git clone <URL>
 ```git
 git clone https://github.com/tcdahlberg/cci_test_1.git
 ```
+
+Your git user must be set up as a collaborator in order to commit to any repository. Go to the repository, if you own it, and click on security. Add collaborators here.
 
 ## Git commands I keep using
 
