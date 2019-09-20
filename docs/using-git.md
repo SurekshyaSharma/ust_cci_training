@@ -1,5 +1,7 @@
 # Git - ***Notes***
 
+Hi Farrah!
+
 Getting a repository from git hub
 
 ```git
