@@ -21,3 +21,6 @@ robot/cci_test_1/results/
 
 # Misc
 .DS_Store
+
+# VS Code
+.vscode
