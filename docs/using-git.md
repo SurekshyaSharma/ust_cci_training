@@ -3,11 +3,11 @@
 Getting a repository from git hub
 
 ```git
-git fetch <URL>
+git clone <URL>
 ```
 
 ```git
-git fetch https://github.com/tcdahlberg/cci_test_1.git
+git clone https://github.com/tcdahlberg/cci_test_1.git
 ```
 
 ## Git commands I keep using
