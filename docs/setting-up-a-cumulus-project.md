@@ -16,8 +16,11 @@
 4. [Install Salesforce CLI extensions in Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode)
 
 5. [Install Python](https://www.python.org/downloads/windows/)
-
-    * Open Cmd.exe from start
+    * When installing Python do not express install and make sure to select these options:
+        * Install for all users
+        * Set Environmental Paths
+        * Install in the root of your C: drive.
+    * Open Command Prompt from start
     * Enter the following into your command line:
 
         ```bash
