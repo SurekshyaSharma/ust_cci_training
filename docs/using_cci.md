@@ -1,6 +1,6 @@
 # Using CumulusCI
 
-CumulusCI sits on top off the Salesfoce Command Line Interface (Salesforce CLI) and facilitates installing managed packages and data into your scratch orgs so you can get developing quickly upon scratch org creation. It also facilitates the creation of managed and unmanaged packages. Furthurmore it ushers you into a better itereative project cycle for collaborating with others. You will be using a combination of Git, Salesforce CLI, and the useful Cumulus tasks and flows.
+CumulusCI sits on top off the Salesfoce Command Line Interface (Salesforce CLI) and Github. It facilitates installing managed packages and data into your scratch orgs so you can get developing quickly upon scratch org creation. It also facilitates the creation of managed and unmanaged packages. Furthurmore it ushers you into a better itereative project cycle for collaborating with others. 
 
 ## Initing CumulusCI
 
@@ -49,7 +49,7 @@ sfdx force:auth:web:login --setdefaultdevhubusername --setalias my-hub-org
 
 A browser tab should open and you will be prompted to log into the org you want to be your dev hub
 
-## Creating a dev scratch org
+## Viewing Your Orgs
 
 First look at what scratch orgs you curently have runing by typing:
 
@@ -122,5 +122,37 @@ cci org default <org_name>
 
 *org name is the name of a persistant org in your persistant org list*
 
+#Creating Scratch Orgs
 
+Scratch orgs are were all you development should initiate. Creating a scratch org that you can spin up quickly and work on immediately is crucial. This may mean installing other projects from GIT or installing managed/unmanaged packagaes. First lets just spin one up.
+
+So, let's just spin one up. This first command will spin up a scratch org with nothing installed. Apparently, simply by getting info on the dev org or will spin one up. Again, none of your code will be in this org yet. In the future you will want to run what is called a flow in CumulusCI. A flow is a sequence of tasks that build your org up correctly with your code and data in place and ready to go.
+
+```bash
+cci org info dev
+```
+
+Next you can make sure that your org has translated all your code to be deployed into the org of your choice. When you run the following command it will evaluate all your code and make an upper level, non-tracked, src directory to deploy.
+
+```bash
+cci task run dx_convert_from
+```
+
+Now you can deploy your code into your new org using this command:
+
+```bash
+cci task run deploy --org dev
+```
+
+* dev can be set to any org name including persistant orgs to deploy code.*
+
+You can open the new dev org at any time during the above commands by calling it into a browser with this command:
+
+```bash
+cci org browser dev
+```
+
+* Again, you can open any org (persistant or scratch) by switchin the 'dev' to that orgs name *
+
+## Deleting an org
 
