@@ -49,6 +49,12 @@ Push your branch to the remote repository:
 git push -u origin feature_branch_name
 ```
 
+Listing current branchs:
+
+```git
+git branch
+```
+
 ## Git commands I keep using
 
 Resetting my local repository to what is on the remote:
