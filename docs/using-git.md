@@ -35,6 +35,20 @@ git push
 
 Your git user must be set up as a collaborator in order to commit to any repository. Go to the repository, if you own it, and click on security. Add collaborators here.
 
+Create a new branch:
+
+```git
+git checkout -b feature_branch_name
+```
+
+Edit, add and commit your files.
+
+Push your branch to the remote repository:
+
+```git
+git push -u origin feature_branch_name
+```
+
 ## Git commands I keep using
 
 Resetting my local repository to what is on the remote:
