@@ -32,7 +32,7 @@ Initializing your git repository can happen from two directions. You can create 
 
    ```git
    git clone <COPIED_URL>
-   ```
+   ``` 
 
 ## Adding a remote repository to an already existing local reporitory
 
