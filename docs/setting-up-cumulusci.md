@@ -43,6 +43,7 @@
         ```bash
         %USERPROFILE%\.local\bin
         ```
+
 6. [Install Cumulus](https://cumulusci.readthedocs.io/en/latest/install.html#installing-cumulusci)
     * Open Cmd.exe from start
     * Enter the following into your command line:
