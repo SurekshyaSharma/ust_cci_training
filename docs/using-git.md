@@ -38,7 +38,7 @@ Initializing your git repository can happen from two directions. You can create 
 
 ```git
 git remote add origin <repository_URL>
-git push --set-upstream origin master 
+git push --set-upstream origin master
 ```
 
 ## Adding git credentials
