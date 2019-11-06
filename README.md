@@ -1,12 +1,15 @@
-# cci_test_1
+# UST CCI Training
 
-Add a brief description of this project here, in Markdown format.
-It will be shown on the main page of the project's GitHub repository.
+This is a CumulusCI training repository for University of St. Thomas employees.
 
-## Development
+- [Setting up the CumulusCI environment](docs/setting-up-cumulusci.md)
 
-To work on this project in a scratch org:
+- [Using git and GitHub](docs/using-git.md)
 
-1. [Set up CumulusCI](https://cumulusci.readthedocs.io/en/latest/tutorial.html)
-2. Run `cci flow run dev_org --org dev` to deploy this project.
-3. Run `cci org browser dev` to open the org in your browser.
+- [Using CumulusCI](docs/using_cci.md)
+
+- [Philadelphia Salesforce Open Source Sprint CumulusCI hands-on training.](docs/CCI_Hands-On_Training.pdf)
+
+*Copyright 2019 University of St. Thomas - Minnesota. All rights reserved.
+Use of this source code is governed by a BSD Revised
+license that can be found in the [LICENSE file](lICENSE.md).*
